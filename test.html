@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Document</title>
+    
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+<body id="top">
+    
+   
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">
+            LIVRAISON GRATUITE POUR TOUTES LES COMMANDES EN TUNISIE DE 50 DT ET PLUS</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+         <p>Marwa accessoires</p>
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="home" id="homeButton">
+            <ion-icon name="home-outline" aria-hidden="true"></ion-icon>
+          </button>
+          
+          <script>
+            document.getElementById('homeButton').addEventListener('click', function() {
+              // Remplacez "home.html" par le chemin de votre page d'accueil
+              window.location.href = './index.html';
+            });
+          </script>
+          
+          
+          
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">0.00 DT</data>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li>
+
+            <li>
+              <a href="#shop" class="navbar-link has-after">Shop</a>
+            </li>
+
+            <li>
+              <a href="#offer" class="navbar-link has-after">Offer</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Blog</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 
+    -  #MOBILE NAVBAR
+  -->
+
+
+
+
+ <div class="sidebare">
+<div class="mobile-navbar" data-navbar>
+
+<div class="wrapper">
+<a href="#" class="logo">
+    <img src="./assets/images/logo.jpg" width="179" height="26" alt="Lumineuse">
+</a>
+<button class="nav-close-btn" aria-label="clase menu" data-nav-toggler >
+<ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+</button>
+</div>
+<ul class="navbar-list">
+<li>
+<a href="#home" class="  navbar-link" data-nav-link>Home</a>
+</li>
+<li>
+    <a href="#collection" class="  navbar-link" data-nav-link>Collection</a>
+    </li>
+    <li>
+        <a href="#shop" class="  navbar-link" data-nav-link>Shop</a>
+        </li>
+        <li>
+            <a href="#offer" class="  navbar-link" data-nav-link>Offer</a>
+            </li>
+        </li>
+        <li>
+            <a href="#blog" class="  navbar-link" data-nav-link>Blog</a>
+            </li>
+
+</ul>
+</div>
+
+<div class="overlay" data-nav-toggler data-overlay></div>
+
+
+ </div>
+   <!-- 
+   login
+  --> <div class="page-container clearfix" id="PageContainer">
+    <main id="MainContent">
+        <link rel="stylesheet" href="/public/profile.css">
+        <div class="main-content shop-page-account">
+          <div class="container">
+            <div class="container block-page-login" style="margin: 32px 0;">
+              <div id="primary"></div>
+              <h1 class="page-title">Account</h1>
+              <hr>
+              <div class="row">
+                <div class="col-lg-auto col-xs-12 col-sm-4 col-md-lg-3">
+                  <div class="wrapper_tabcontent customer">
+                  
+<a href="/dashboard">
+    <button>
+        <i class="fas fa-bars"></i>
+        Dashboard
+    </button>
+</a>
+
+<a href="/checkout" >
+    <button>
+        <i class="fas fa-check-circle"></i>
+        Check Out
+    </button>
+</a>
+
+<a href="/addresses">
+    <button>
+        <i class="fas fa-map-marker-alt"></i>
+        View Addresses
+    </button>
+</a>
+
+<a href="/wishlist">
+    <button>
+        <i class="fas fa-heart"></i>
+        View Wishlist
+    </button>
+</a>
+
+<a href="/logout">
+    <button>
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+    </button>
+</a>
+
+                  </div>
+  
+      <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form id="sigForm">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+    
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="passwordSignup">Password:</label>
+          <input type="password" id="password" name="passwordSignup" required>
+    
+          <button type="button" onclick="sigForm()">Sign Up</button>
+        </form>
+    
+        <script>
+          function sigForm() {
+            // Récupérer les valeurs du formulaire
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            // Envoi des données au serveur
+            fetch('/inscription', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ firstName, lastName, email, password }),
+            })
+            .then(response => response.json())
+            .then(data => {
+              // Afficher le message de confirmation ou gérer les erreurs
+              alert(data.message);
+    
+              // Rediriger vers la page appropriée
+              if (data.success) {
+                window.location.href = 'admin.html';
+              }
+            })
+            .catch(error => {
+              console.error('Erreur lors de la requête fetch:', error);
+            });
+          }
+        </script>
+      </div>
+  
+
+  </div>
+</div>
+
+  <!-- ... Votre contenu principal ... -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/scriptt.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
